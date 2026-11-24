@@ -14,7 +14,7 @@ jobs:
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v3
       - name: Unzip project
-        run: unzip -o amar-khata-github.zip
+        run:  run: unzip -o *.zip
       - name: Build debug APK
         run: gradle :app:assembleDebug
         working-directory: amar-khata-apk
